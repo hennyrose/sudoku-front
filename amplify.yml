@@ -6,7 +6,7 @@ frontend:
         - npm --version
         - node --version
         - echo "Installing dependencies..."
-        - npm ci
+        - npm install
     build:
       commands:
         - echo "Starting build..."
