@@ -1,8 +1,9 @@
+/* App.css */
 /* Загальні стилі таблиці */
 table {
   border-collapse: collapse;
-  margin: 20px auto; /* Центрування таблиці */
-  border: 3px solid black; /* Товста рамка довкола всієї таблиці */
+  margin: 20px auto;
+  border: 3px solid black;
 }
 
 td {
@@ -11,8 +12,8 @@ td {
   border: 1px solid black;
   text-align: center;
   font-size: 22px;
-  cursor: pointer; /* Вказівник при наведенні */
-  transition: background-color 0.3s ease; /* Плавний перехід кольору */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 /* Товсті лінії між групами з 3 рядків */
@@ -25,47 +26,36 @@ table td:nth-child(3n) {
   border-right: 3px solid black;
 }
 
-/* Стиль для порожніх клітинок */
 td.empty-cell {
-  background-color: #f9f9f9; /* Світло-сірий колір для порожніх клітинок */
+  background-color: #f9f9f9;
 }
 
-/* Стиль для вже заповнених клітинок */
 td.filled-cell {
-  background-color: #ddd; /* Темніший сірий */
+  background-color: #ddd;
   font-weight: bold;
   color: black;
 }
 
-/* Підсвічування клітинки при наведенні */
 td:hover {
   background-color: #e0e0e0;
 }
 
-/* Виділена клітинка */
 td.selected-cell {
   background-color: lightblue !important;
+  border: 2px solid blue;
 }
 
-/* Помилка вводу */
 .incorrect {
   background-color: red !important;
   color: white !important;
   border: 2px solid darkred;
 }
 
-/* Вимкнені (заблоковані) клітинки */
-td.disabled {
-  background-color: #ccc;
-  color: gray;
-  cursor: not-allowed;
-}
-
 /* Стилі кнопок */
 button {
   margin: 5px;
   padding: 10px 15px;
-  background-color: #007bff; /* Синій за замовчуванням */
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 4px;
@@ -75,7 +65,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3; /* Темніший синій при наведенні */
+  background-color: #0056b3;
 }
 
 button:disabled {
@@ -84,25 +74,23 @@ button:disabled {
   cursor: not-allowed;
 }
 
-/* Стиль привітального повідомлення */
-h1 {
-  text-align: center;
-  color: green;
-  font-size: 32px;
-  margin-bottom: 20px;
+/* Кнопка авторизації */
+.auth-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  padding: 5px 10px;
 }
 
-/* Кнопка для перегенерації */
-button#regenerate {
-  display: block;
-  margin: 20px auto;
-  background-color: #28a745; /* Зелений для перегенерації */
+.auth-button:hover {
+  background-color: #f0f0f0;
 }
 
-button#regenerate:hover {
-  background-color: #218838;
-}
-
+/* Контейнер для кнопок з цифрами */
 .button-container {
   text-align: center;
   margin-top: 20px;
@@ -112,7 +100,20 @@ button#regenerate:hover {
   margin: 5px;
 }
 
-td.selected-cell {
-  border: 2px solid blue;
-  background-color: lightblue !important;
+/* Кнопка для перегенерації */
+button#regenerate {
+  display: block;
+  margin: 20px auto;
+  background-color: #28a745;
+}
+
+button#regenerate:hover {
+  background-color: #218838;
+}
+
+h1 {
+  text-align: center;
+  color: green;
+  font-size: 32px;
+  margin-bottom: 20px;
 }
